@@ -14,3 +14,7 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('/codigo-postal/{cp}',function($cp) {
+    return "Codigo Postal : {$cp}";
+})->where('cp','[0-9]+');
