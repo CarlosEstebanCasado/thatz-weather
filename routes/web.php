@@ -17,4 +17,4 @@ Route::get('/', function () {
 
 Route::get('/codigo-postal/{cp}',function($cp) {
     return "Codigo Postal : {$cp}";
-})->where('cp','[0-9]+');
+})->where('cp','[0-9]{5}'); //Los codigos postales es españa tienen 5 cifras
