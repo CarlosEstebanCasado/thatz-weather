@@ -11,10 +11,9 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+use App\Http\Controllers\CodigoPostalController;
 
-Route::get('/codigo-postal/{cp}',function($cp) {
-    return "Codigo Postal : {$cp}";
-})->where('cp','[0-9]{5}'); //Los codigos postales es españa tienen 5 cifras
+Route::get('/', 'CodigoPostalController@index');
+
+Route::get('/codigo-postal/{cp}', 'CodigoPostalController@mostrarCodigoPostal')
+    ->where('cp', '[0-9]{5}'); //Los codigos postales en españa tienen 5 cifras
