@@ -1,3 +1,37 @@
-body {
-    background-color: aqua;
+:root {
+    --botonBuscar: #00bde0;
 }
+
+
+/*SE TIENE QUE ELIMINAR*/
+
+.container {
+    border: 1px solid red;
+}
+
+.logo {
+    background-image: url(../img/mobile/logo-mobile.png);
+    width: 16.813em;
+    height: 4.313em;
+    margin: 4em;
+    background-size: 100% 100%;
+    z-index: 2;
+}
+
+body {
+    background-image: url(../img/mobile/fondo-mobile.png);
+}
+
+
+/*Medium devices (tablets, 768px and up)*/
+
+@media (min-width: 768px) {
+    body {
+        background-image: url(../img/desktop/fondo-desktop.jpg);
+    }
+}
+
+
+/* Large devices (desktops, 992px and up)*/
+
+@media (min-width: 992px) {}

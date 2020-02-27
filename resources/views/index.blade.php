@@ -11,9 +11,30 @@
     <!--CSS Styles-->
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Muli&display=swap" rel="stylesheet">
+
   </head>
   <body>
-      <h1>Hola</h1>
+      <div class="container">
+        <div class="row">
+          <div id="logo" class="d-flex justify-content-center logo"></div>
+        </div>
+        <main class="">
+          <div>
+            <p>Entérate del tiempo en la zona exacta que te interesa buscando por código postal</p>
+          </div>
+          <div>
+            <div class="form-group">
+              <input type="text" class="form-control" name="" id="" placeholder="Introduce el código postal">
+              
+            </div>
+          </div>
+        </main>
+      </div>
+
+
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
