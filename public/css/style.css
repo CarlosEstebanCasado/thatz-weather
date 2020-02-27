@@ -1,12 +1,22 @@
 :root {
     --botonBuscar: #00bde0;
+    --color-textos: white;
+}
+
+* {
+    font-family: 'Muli';
 }
 
 
 /*SE TIENE QUE ELIMINAR*/
 
-.container {
+
+/*.container {
     border: 1px solid red;
+}*/
+
+body {
+    background-image: url(../img/mobile/fondo-mobile.png);
 }
 
 .logo {
@@ -18,8 +28,47 @@
     z-index: 2;
 }
 
-body {
-    background-image: url(../img/mobile/fondo-mobile.png);
+
+/*Textos home*/
+
+main p {
+    color: var(--color-textos);
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 24px;
+}
+
+
+/*Formulario home*/
+
+input[type=text] {
+    border: 1px solid var(--color-textos) !important;
+    border-radius: 4px !important;
+    background-color: transparent !important;
+    color: var(--color-textos) !important;
+    height: 50px;
+}
+
+input[type=text]::placeholder {
+    color: var(--color-textos) !important;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+button[type=submit] {
+    background-color: var(--botonBuscar) !important;
+    border-radius: 4px !important;
+    border: none;
+    color: var(--color-textos) !important;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+form button .lupa {
+    background-image: url(../img/mobile/lupa-mobile.svg);
+    background-color: var(--color-textos);
+    width: 36px;
+    height: 36px;
 }
 
 

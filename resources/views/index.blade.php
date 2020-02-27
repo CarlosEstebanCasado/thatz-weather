@@ -21,15 +21,22 @@
         <div class="row">
           <div id="logo" class="d-flex justify-content-center logo"></div>
         </div>
-        <main class="">
+        <main class="d-flex flex-column">
           <div>
             <p>Entérate del tiempo en la zona exacta que te interesa buscando por código postal</p>
           </div>
           <div>
-            <div class="form-group">
-              <input type="text" class="form-control" name="" id="" placeholder="Introduce el código postal">
-              
-            </div>
+            <form action="" method="get">
+              <div class="form-group">
+                <input type="text" class="form-control" name="" id="codigoPostal" placeholder="Introduce el código postal">
+              </div>
+              <div class="form-group">
+                <button type="submit" class="btn btn-primary btn-lg btn-block">Buscar <i class="lupa"></i> </button>
+              </div>
+            </form>
+          </div>
+          <div class="d-flex justify-content-center">
+            <p>¡Que la lluvia no te pare!</p>
           </div>
         </main>
       </div>
