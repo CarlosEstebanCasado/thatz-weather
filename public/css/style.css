@@ -13,8 +13,13 @@
 }
 
 body {
-    background-image: url(../img/mobile/fondo-mobile.png);
+    background: url(../img/mobile/fondo-mobile.png), var(--fondo-html);
+    background-repeat: no-repeat, repeat;
     z-index: 2;
+}
+
+p {
+    margin: 0;
 }
 
 
@@ -92,14 +97,17 @@ button[type=submit] {
 }
 
 form button .lupa {
+    /*display: block;*/
     background-image: url(../img/mobile/lupa-mobile.svg);
-    background-color: var(--color-textos);
-    width: 36px;
-    height: 36px;
+    width: 2.250em;
+    height: 2.250em;
 }
 
 
 /*-------------Estilos Resultados-----------------*/
+
+
+/*Logo resultado*/
 
 .logo-resultado {
     background-image: url(../img/mobile/logo-resultado-mobile.png);
@@ -114,10 +122,140 @@ form button .lupa {
     margin-bottom: 1em;
 }
 
+
+/*Color de los textos*/
+
+.resultado p {
+    color: var(--color-textos);
+}
+
+
+/*información de la población*/
+
+.resultado .ciudad .info-cp,
+.resultado .ciudad .info-ciudad {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    margin: 0;
+}
+
+.resultado .ciudad .info-cp span,
+.resultado .ciudad .info-ciudad span {
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 24px;
+}
+
+
+/*Icono de buscar*/
+
+.buscar .lupa {
+    display: block;
+    background: url(../img/mobile/lupa-mobile.svg);
+    width: 2.250em;
+    height: 2.250em;
+}
+
+
+/*Titulos resultados del tiempo*/
+
+.resultado .resultados-tiempo .ahora .titulo p {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+
+/*Iconos tiempo*/
+
+.resultado .resultados-tiempo .ahora .tiempo {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+.resultado .resultados-tiempo .ahora .tiempo i {
+    color: var(--color-textos);
+    font-size: 65px;
+}
+
+.resultado .resultados-tiempo .ahora .tiempo-actual>div {
+    padding: 0;
+}
+
+
+/*Fenómeno meteorológico actual*/
+
+.resultado .resultados-tiempo .ahora .tiempo-actual .fenomeno {
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 24px;
+    /*padding-top: 2em;*/
+}
+
+
+/*Temperatura actual*/
+
+.resultado .resultados-tiempo .ahora .tiempo-actual .temperatura {
+    font-size: 58px;
+    font-weight: 300;
+}
+
+
+/*---Bloque tiempo 5 dias---*/
+
+.dias5 {
+    margin: 2em 0;
+}
+
+.dias5 .titulo {
+    margin: 1em 0;
+}
+
+.dias5-forecast {
+    background-color: var(--fondo-temperaturas);
+    justify-content: center;
+}
+
+.dias5-forecast .dia-forecast {
+    padding: 0.5em 0.6em;
+    width: 80px;
+}
+
+.dias5-forecast .dia-forecast i {
+    color: var(--color-textos);
+    font-size: 40px;
+    padding-top: 1em;
+    text-align: center;
+}
+
+.dias5-forecast .dia-forecast p {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+.dias5-forecast .dia-forecast p.temperatura {
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 24px;
+}
+
+
+/*---Bloque Top 5 Temperaturas---*/
+
 .texto-top5,
 .top5 {
     color: var(--color-textos);
 }
+
+.top5>div {
+    padding: 0.5em 0;
+}
+
+
+/*Texto superior del bloque Top 5*/
 
 .resultado .texto-top5 p {
     font-size: 24px;
@@ -125,6 +263,9 @@ form button .lupa {
     line-height: 28px;
     text-align: center;
 }
+
+
+/*Estilos lista de poblaciones*/
 
 .top5 .numero-lista>p {
     font-size: 24px;
@@ -134,6 +275,9 @@ form button .lupa {
     padding-top: 0.5em;
 }
 
+
+/*Estilos temperatura*/
+
 .resultados .resultado .top5 .temperatura {
     font-size: 48px;
     font-weight: 300;
@@ -141,6 +285,9 @@ form button .lupa {
     padding: 0 0.25em;
     margin: 0;
 }
+
+
+/*Información población Top5*/
 
 .resultados .resultado .top5 p.info-ciudad,
 .resultados .resultado .top5 p.info-cp {
