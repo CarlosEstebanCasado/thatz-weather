@@ -22,20 +22,20 @@
           <div id="logo" class="d-flex justify-content-center logo"></div>
         </div>
         <main class="d-flex flex-column">
-          <div>
+          <div class="frase">
             <p>Entérate del tiempo en la zona exacta que te interesa buscando por código postal</p>
           </div>
           <div>
             <form action="" method="get">
               <div class="form-group">
-                <input type="text" class="form-control" name="" id="codigoPostal" placeholder="Introduce el código postal">
+                <input type="text" class="form-control" name="" id="codigoPostal" placeholder="Introduce el código postal" maxlength="5" pattern="[0-9]{5}"" oninvalid="this.setCustomValidity('Debes introducir 5 dígitos.')">
               </div>
               <div class="form-group">
                 <button type="submit" class="btn btn-primary btn-lg btn-block">Buscar <i class="lupa"></i> </button>
               </div>
             </form>
           </div>
-          <div class="d-flex justify-content-center">
+          <div class="d-flex justify-content-center eslogan">
             <p>¡Que la lluvia no te pare!</p>
           </div>
         </main>

@@ -23,9 +23,14 @@ body {
     background-image: url(../img/mobile/logo-mobile.png);
     width: 16.813em;
     height: 4.313em;
-    margin: 4em;
+    margin: 3.5em auto;
     background-size: 100% 100%;
     z-index: 2;
+}
+
+main {
+    margin: 1em;
+    margin-top: 5em;
 }
 
 
@@ -36,6 +41,14 @@ main p {
     font-size: 18px;
     font-weight: 700;
     line-height: 24px;
+}
+
+main .frase p {
+    margin-bottom: 2em;
+}
+
+main .eslogan p {
+    margin-top: 13em;
 }
 
 
@@ -62,6 +75,7 @@ button[type=submit] {
     color: var(--color-textos) !important;
     font-size: 24px;
     font-weight: 700;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
 }
 
 form button .lupa {
@@ -78,9 +92,35 @@ form button .lupa {
     body {
         background-image: url(../img/desktop/fondo-desktop.jpg);
     }
+    .logo {
+        background-image: url(../img/desktop/logo-desktop.png);
+        width: 38.625em;
+        height: 9.875em;
+        margin: 4em auto;
+    }
+    .container {
+        max-width: 700px;
+    }
 }
 
 
 /* Large devices (desktops, 992px and up)*/
 
-@media (min-width: 992px) {}
+@media (min-width: 992px) {
+    .logo {
+        background-image: url(../img/desktop/logo-desktop.png);
+        background-image: no-repeat;
+        background-image: fixed;
+        background-image: center;
+        background-size: cover;
+        width: 38.625em;
+        height: 9.875em;
+        margin: 4em auto;
+    }
+    .container {
+        max-width: 700px;
+    }
+    main .eslogan p {
+        margin-top: 10em;
+    }
+}
