@@ -9,8 +9,8 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <!--CSS Styles-->
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="{{ asset('css/normalize.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/style.css') }}">
 
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Muli&display=swap" rel="stylesheet">
@@ -21,14 +21,14 @@
         <div class="row">
           <div id="logo" class="d-flex justify-content-center logo"></div>
         </div>
-        <main class="d-flex flex-column">
+        <main class="d-flex flex-column home">
           <div class="frase">
             <p>Entérate del tiempo en la zona exacta que te interesa buscando por código postal</p>
           </div>
           <div>
             <form action="" method="get">
               <div class="form-group">
-                <input type="text" class="form-control" name="" id="codigoPostal" placeholder="Introduce el código postal" maxlength="5" pattern="[0-9]{5}"" oninvalid="this.setCustomValidity('Debes introducir 5 dígitos.')">
+                <input type="text" class="form-control" name="" id="codigoPostal" placeholder="Introduce el código postal" maxlength="5" pattern="[0-9]{5}" oninvalid="this.setCustomValidity('Debes introducir 5 dígitos.')">
               </div>
               <div class="form-group">
                 <button type="submit" class="btn btn-primary btn-lg btn-block">Buscar <i class="lupa"></i> </button>

@@ -11,7 +11,13 @@ class CodigoPostalController extends Controller
         return view('index');
     }
 
-    public function mostrarCodigoPostal($cp){
-        return "Codigo Postal : {$cp}";
+    /*public function mostrarCodigoPostal($cp){
+        //return "Codigo Postal : {$cp}";
+        return view('codigoPostal');
+    }*/
+
+    //Para maquetar
+    public function mostrarCodigoPostal(){
+        return view('codigoPostal');
     }
 }

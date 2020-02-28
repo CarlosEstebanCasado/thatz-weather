@@ -1,23 +1,27 @@
+/*Definición de colores*/
+
 :root {
     --botonBuscar: #00bde0;
     --color-textos: white;
+    --fondo-html: #372019;
+    --fondo-temperaturas: #306c77;
+    --fondo-resultados: rgba(48, 108, 119, 0.7);
 }
 
 * {
     font-family: 'Muli';
 }
 
-
-/*SE TIENE QUE ELIMINAR*/
-
-
-/*.container {
-    border: 1px solid red;
-}*/
-
 body {
     background-image: url(../img/mobile/fondo-mobile.png);
+    z-index: 2;
 }
+
+
+/*----------Estilos home--------------*/
+
+
+/*Logo*/
 
 .logo {
     background-image: url(../img/mobile/logo-mobile.png);
@@ -25,35 +29,43 @@ body {
     height: 4.313em;
     margin: 3.5em auto;
     background-size: 100% 100%;
-    z-index: 2;
 }
 
-main {
+
+/*Contenido */
+
+.home {
     margin: 1em;
     margin-top: 5em;
 }
 
 
-/*Textos home*/
+/*Textos */
 
-main p {
+.home p {
     color: var(--color-textos);
     font-size: 18px;
     font-weight: 700;
     line-height: 24px;
 }
 
-main .frase p {
+
+/*Frase superior*/
+
+.home .frase p {
     margin-bottom: 2em;
     text-align: center;
 }
 
-main .eslogan p {
+
+/*Eslogan*/
+
+.home .eslogan p {
     margin-top: 13em;
 }
 
 
-/*Formulario home*/
+/*Formulario*/
 
 input[type=text] {
     border: 1px solid var(--color-textos) !important;
@@ -85,6 +97,70 @@ form button .lupa {
     width: 36px;
     height: 36px;
 }
+
+
+/*-------------Estilos Resultados-----------------*/
+
+.logo-resultado {
+    background-image: url(../img/mobile/logo-resultado-mobile.png);
+    width: 16.813em;
+    height: 4.313em;
+    margin: 3.5em auto;
+    background-size: 100% 100%;
+}
+
+.resultado {
+    background-color: var(--fondo-resultados);
+    margin-bottom: 1em;
+}
+
+.texto-top5,
+.top5 {
+    color: var(--color-textos);
+}
+
+.resultado .texto-top5 p {
+    font-size: 24px;
+    font-weight: 300;
+    line-height: 28px;
+    text-align: center;
+}
+
+.top5 .numero-lista>p {
+    font-size: 24px;
+    font-weight: 300;
+    line-height: 24px;
+    text-align: center;
+    padding-top: 0.5em;
+}
+
+.resultados .resultado .top5 .temperatura {
+    font-size: 48px;
+    font-weight: 300;
+    line-height: 48px;
+    padding: 0 0.25em;
+    margin: 0;
+}
+
+.resultados .resultado .top5 p.info-ciudad,
+.resultados .resultado .top5 p.info-cp {
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 400;
+    margin: 0;
+}
+
+.resultados .resultado .top5 p.info-cp span,
+.resultados .resultado .top5 p.info-ciudad span {
+    font-weight: 700;
+}
+
+.resultados .resultado .top5 p.info-ciudad span {
+    font-size: 18px;
+}
+
+
+/*--------Responsive------------*/
 
 
 /*Medium devices (tablets, 768px and up)*/
@@ -124,5 +200,11 @@ form button .lupa {
     }
     main .eslogan p {
         margin-top: 10em;
+    }
+    .logo-resultado {
+        background-image: url(../img/desktop/logo-resultado.png);
+        width: 38.625em;
+        height: 9.875em;
+        margin: 4em auto;
     }
 }
