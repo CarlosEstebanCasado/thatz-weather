@@ -45,6 +45,7 @@ main p {
 
 main .frase p {
     margin-bottom: 2em;
+    text-align: center;
 }
 
 main .eslogan p {
@@ -91,6 +92,8 @@ form button .lupa {
 @media (min-width: 768px) {
     body {
         background-image: url(../img/desktop/fondo-desktop.jpg);
+        background-position: center;
+        background-size: cover;
     }
     .logo {
         background-image: url(../img/desktop/logo-desktop.png);
@@ -109,16 +112,15 @@ form button .lupa {
 @media (min-width: 992px) {
     .logo {
         background-image: url(../img/desktop/logo-desktop.png);
-        background-image: no-repeat;
-        background-image: fixed;
-        background-image: center;
-        background-size: cover;
         width: 38.625em;
         height: 9.875em;
         margin: 4em auto;
     }
     .container {
         max-width: 700px;
+    }
+    main .frase p {
+        padding: 0 2em;
     }
     main .eslogan p {
         margin-top: 10em;
