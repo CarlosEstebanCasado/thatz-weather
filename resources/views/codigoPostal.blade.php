@@ -26,7 +26,7 @@
         </div>  
         <main class="d-flex flex-wrap resultados">
             <div class="col-sm-12 col-md-8 resultado">
-                <div class="d-flex justify-content-between col-sm-12 my-4">
+                <div class="d-flex col-sm-12 my-4 busqueda-ciudad">
                     <div class="d-flex flex-column ciudad">
                         <p class="info-cp">Código Postal: <span>08034</span></p>
                         <p class="info-ciudad">Ciudad: <span>Barcelona</span></p>
@@ -36,7 +36,7 @@
                     </div>
                 </div>
                 <div class="resultados-tiempo col-sm-12">
-                    <div class="ahora">
+                    <div class="ahora col-sm-12 col-md-5">
                         <div class="d-flex justify-content-center titulo">
                             <p>Ahora</p>
                         </div>
@@ -54,7 +54,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="dias5 border-top">
+                    <div class="dias5 col-sm-12 col-md-6">
                         <div class="d-flex justify-content-center titulo">
                             <p>Próximos 5 días</p>
                         </div>
@@ -134,7 +134,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-sm-12 col-md-4 resultado">
+            <div class="col-sm-12 col-md-3 resultado">
                 <div class="texto-top5 my-4">
                     <p>Top 5 de las zonas más frías según tus búsquedas</p>
                 </div>

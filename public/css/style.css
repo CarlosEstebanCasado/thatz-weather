@@ -132,6 +132,10 @@ form button .lupa {
 
 /*información de la población*/
 
+.resultado .busqueda-ciudad {
+    justify-content: space-between;
+}
+
 .resultado .ciudad .info-cp,
 .resultado .ciudad .info-ciudad {
     font-size: 16px;
@@ -207,6 +211,7 @@ form button .lupa {
 
 .dias5 {
     margin: 2em 0;
+    border-top: 1px solid var(--color-textos);
 }
 
 .dias5 .titulo {
@@ -221,7 +226,6 @@ form button .lupa {
 
 .dias5-forecast .dia-forecast {
     padding: 0.5em 0.6em;
-    width: 80px;
 }
 
 .dias5-forecast .dia-forecast i {
@@ -256,8 +260,6 @@ form button .lupa {
     -o-transform: translateY(-50%);
     transform: translateY(-50%);
 }
-
-.carousel {}
 
 .prev {
     left: -1.2rem;
@@ -352,21 +354,47 @@ form button .lupa {
     .container {
         max-width: 700px;
     }
+    .resultado {
+        margin-left: 4em;
+    }
+    .busqueda-ciudad {
+        justify-content: center !important;
+    }
+    .ciudad {
+        margin-right: 10em;
+    }
+    .buscar {
+        margin-right: 10em;
+    }
+    .resultado .resultados-tiempo {
+        display: flex;
+        flex-direction: row;
+        margin-top: 5em;
+    }
+    .resultado .resultados-tiempo .ahora .tiempo i {
+        font-size: 85px;
+    }
+    .dias5 {
+        margin: 0;
+        padding-left: 5em;
+        border-left: 1px solid var(--color-textos);
+        border-top: 0px;
+    }
+    .dias5 .titulo {
+        margin: 0;
+    }
+    .dias5-forecast {
+        margin: 1em;
+    }
+    .col-md-3 {
+        max-width: 20% !important;
+    }
 }
 
 
 /* Large devices (desktops, 992px and up)*/
 
 @media (min-width: 992px) {
-    .logo {
-        background-image: url(../img/desktop/logo-desktop.png);
-        width: 38.625em;
-        height: 9.875em;
-        margin: 4em auto;
-    }
-    .container {
-        max-width: 700px;
-    }
     main .frase p {
         padding: 0 2em;
     }
