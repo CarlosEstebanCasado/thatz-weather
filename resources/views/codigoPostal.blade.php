@@ -140,7 +140,7 @@
                     <p>Top 5 de las zonas más frías según tus búsquedas</p>
                 </div>
                 <div class="d-flex flex-column top5">
-                    <div class="d-flex flex-wrap my-2 border-bottom">
+                    <div class="d-flex flex-wrap my-2 border-bottom item-lista">
                         <div class="numero-lista">
                             <p>1.</p>
                         </div>
@@ -156,7 +156,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="d-flex flex-wrap my-2 border-bottom">
+                    <div class="d-flex flex-wrap my-2 border-bottom item-lista">
                         <div class="numero-lista">
                             <p>2.</p>
                         </div>
@@ -172,7 +172,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="d-flex flex-wrap my-2 border-bottom">
+                    <div class="d-flex flex-wrap my-2 border-bottom item-lista">
                         <div class="numero-lista">
                             <p>3.</p>
                         </div>
@@ -188,7 +188,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="d-flex flex-wrap my-2 border-bottom">
+                    <div class="d-flex flex-wrap my-2 border-bottom item-lista">
                         <div class="numero-lista">
                             <p>4.</p>
                         </div>
@@ -204,7 +204,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="d-flex flex-wrap my-2 border-bottom">
+                    <div class="d-flex flex-wrap my-2 border-bottom item-lista">
                         <div class="numero-lista">
                             <p>5.</p>
                         </div>

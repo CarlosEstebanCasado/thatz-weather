@@ -341,6 +341,12 @@ form button .lupa {
 
 /*--------Responsive------------*/
 
+@media (max-width: 360px) {
+    .dias5-forecast .dia-forecast p {
+        font-size: 10px;
+    }
+}
+
 
 /*Medium devices (tablets, 768px and up)*/
 
@@ -355,6 +361,10 @@ form button .lupa {
         width: 38.625em;
         height: 9.875em;
         margin: 4em auto;
+    }
+    /*Centrar lista top5*/
+    .item-lista {
+        justify-content: space-evenly;
     }
 }
 
