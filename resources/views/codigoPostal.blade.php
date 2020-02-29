@@ -8,6 +8,10 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    
+    <!-- Slick CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" rel="stylesheet">
+
     <!-- Styles CSS -->
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
@@ -54,8 +58,13 @@
                         <div class="d-flex justify-content-center titulo">
                             <p>Próximos 5 días</p>
                         </div>
-                        <div class="d-flex flex-wrap dias5-forecast">
-                            <div class="d-flex flex-column dia-forecast border-left text-center">
+                        <div class="d-flex dias5-forecast">
+                            <div class="carousel-controls forecast-carousel-controls">
+                                <div class="control prev"><i class="fa fa-chevron-left text-white">&nbsp;</i></div>
+                                <div class="control next"><i class="fa fa-chevron-right text-white">&nbsp;</i></div>
+                            </div>
+                            <div class="carousel">
+                                <div class="d-flex flex-column dia-forecast border-left text-center">
                                 
                                     <p class="dia-semana">Miércoles</p>
                                 
@@ -65,10 +74,21 @@
                                 
                                     <p class="temperatura"> -3º</p>
                                 
-                            </div>
-                            <div class="d-flex flex-column dia-forecast border-left text-center">
-                                
-                                    <p class="dia-semana">Jueves</p>
+                                </div>
+                                <div class="d-flex flex-column dia-forecast border-left text-center">
+                                    
+                                        <p class="dia-semana">Jueves</p>
+                                    
+                                        <i class="far fa-snowflake"></i>
+                                    
+                                        <p>Nieve</p>
+                                    
+                                        <p class="temperatura"> -3º</p>
+                                    
+                                </div>
+                                <div class="d-flex flex-column dia-forecast border-left text-center">
+                                    
+                                    <p class="dia-semana">Viernes</p>
                                 
                                     <i class="far fa-snowflake"></i>
                                 
@@ -76,28 +96,29 @@
                                 
                                     <p class="temperatura"> -3º</p>
                                 
-                            </div>
-                            <div class="d-flex flex-column dia-forecast border-left text-center">
+                                </div>
+                                <div class="d-flex flex-column dia-forecast border-left text-center">
+                                    
+                                    <p class="dia-semana">Sábado</p>
                                 
-                                <p class="dia-semana">Viernes</p>
-                            
-                                <i class="far fa-snowflake"></i>
-                            
-                                <p>Nieve</p>
-                            
-                                <p class="temperatura"> -3º</p>
-                            
-                            </div>
-                            <div class="d-flex flex-column dia-forecast border-left text-center">
+                                    <i class="far fa-snowflake"></i>
                                 
-                                <p class="dia-semana">Sábado</p>
-                            
-                                <i class="far fa-snowflake"></i>
-                            
-                                <p>Nieve</p>
-                            
-                                <p class="temperatura"> -3º</p>
-                            
+                                    <p>Nieve</p>
+                                
+                                    <p class="temperatura"> -3º</p>
+                                
+                                </div>
+                                <div class="d-flex flex-column dia-forecast border-left text-center">
+                                    
+                                    <p class="dia-semana">Domingo</p>
+                                
+                                    <i class="far fa-snowflake"></i>
+                                
+                                    <p>Nieve</p>
+                                
+                                    <p class="temperatura"> -3º</p>
+                                
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -194,9 +215,11 @@
       </div>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
     <script src="https://kit.fontawesome.com/c7b477f16b.js" crossorigin="anonymous"></script>
+    <script src="js/sliderTiempoDias.js"></script>
 </body>
 </html>

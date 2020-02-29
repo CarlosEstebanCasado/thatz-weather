@@ -215,7 +215,8 @@ form button .lupa {
 
 .dias5-forecast {
     background-color: var(--fondo-temperaturas);
-    justify-content: center;
+    position: relative !important;
+    display: block;
 }
 
 .dias5-forecast .dia-forecast {
@@ -240,6 +241,30 @@ form button .lupa {
     font-size: 18px;
     font-weight: 700;
     line-height: 24px;
+}
+
+
+/*Flechas slide*/
+
+.carousel-controls .control {
+    position: absolute;
+    cursor: pointer;
+    top: 56.4%;
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+.carousel {}
+
+.prev {
+    left: -1.2rem;
+}
+
+.next {
+    right: -1.2rem;
 }
 
 
