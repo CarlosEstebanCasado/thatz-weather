@@ -162,6 +162,10 @@ form button .lupa {
     height: 2.250em;
 }
 
+.link-home {
+    display: none;
+}
+
 
 /*Titulos resultados del tiempo*/
 
@@ -346,6 +350,35 @@ form button .lupa {
         background-position: center;
         background-size: cover;
     }
+    .logo-resultado {
+        background-image: url(../img/desktop/logo-resultado.png);
+        width: 38.625em;
+        height: 9.875em;
+        margin: 4em auto;
+    }
+}
+
+
+/* Large devices (desktops, 992px and up)*/
+
+@media (min-width: 992px) {
+    main .frase p {
+        padding: 0 2em;
+    }
+    main .eslogan p {
+        margin-top: 10em;
+    }
+    .logo-resultado {
+        background-image: url(../img/desktop/logo-resultado.png);
+        width: 38.625em;
+        height: 9.875em;
+        margin: 4em auto;
+    }
+    body {
+        background-image: url(../img/desktop/fondo-desktop.jpg);
+        background-position: center;
+        background-size: cover;
+    }
     .logo {
         background-image: url(../img/desktop/logo-desktop.png);
         width: 38.625em;
@@ -401,25 +434,7 @@ form button .lupa {
     .resultados .resultado .top5 .temperatura {
         padding: 0 0.75em;
     }
-    .col-md-3 {
+    .col-lg-3 {
         max-width: 20% !important;
-    }
-}
-
-
-/* Large devices (desktops, 992px and up)*/
-
-@media (min-width: 992px) {
-    main .frase p {
-        padding: 0 2em;
-    }
-    main .eslogan p {
-        margin-top: 10em;
-    }
-    .logo-resultado {
-        background-image: url(../img/desktop/logo-resultado.png);
-        width: 38.625em;
-        height: 9.875em;
-        margin: 4em auto;
     }
 }

@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
     
     <!-- Slick CSS -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" rel="stylesheet">
@@ -25,7 +25,7 @@
             <div id="logo" class="d-flex justify-content-center logo-resultado"></div>
         </div>  
         <main class="d-flex flex-wrap resultados">
-            <div class="col-sm-12 col-md-8 resultado">
+            <div class="col-sm-12 col-lg-8 resultado">
                 <div class="d-flex col-sm-12 my-4 busqueda-ciudad">
                     <div class="d-flex flex-column ciudad">
                         <p class="info-cp">Código Postal: <span>08034</span></p>
@@ -37,7 +37,7 @@
                     </div>
                 </div>
                 <div class="resultados-tiempo col-sm-12">
-                    <div class="ahora col-sm-12 col-md-5">
+                    <div class="ahora col-sm-12 col-lg-5">
                         <div class="d-flex justify-content-center titulo">
                             <p>Ahora</p>
                         </div>
@@ -55,7 +55,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="dias5 col-sm-12 col-md-6">
+                    <div class="dias5 col-sm-12 col-lg-6">
                         <div class="d-flex justify-content-center titulo">
                             <p>Próximos 5 días</p>
                         </div>
@@ -135,7 +135,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-sm-12 col-md-3 resultado">
+            <div class="col-sm-12 col-lg-3 resultado">
                 <div class="texto-top5 my-4">
                     <p>Top 5 de las zonas más frías según tus búsquedas</p>
                 </div>
