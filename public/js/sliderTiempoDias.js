@@ -1,7 +1,8 @@
 $(document).ready(function() {
     $(".carousel").slick({
         dots: false,
-        slidesToShow: 5,
+        infinite: false,
+        slidesToShow: 4,
         slidesToScroll: 1,
         touchMove: true,
         arrows: true,

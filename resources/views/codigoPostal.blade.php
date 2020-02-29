@@ -58,26 +58,16 @@
                         <div class="d-flex justify-content-center titulo">
                             <p>Próximos 5 días</p>
                         </div>
-                        <div class="d-flex dias5-forecast">
+                        <div class="dias5-forecast">
                             <div class="carousel-controls forecast-carousel-controls">
                                 <div class="control prev"><i class="fa fa-chevron-left text-white">&nbsp;</i></div>
                                 <div class="control next"><i class="fa fa-chevron-right text-white">&nbsp;</i></div>
                             </div>
                             <div class="carousel">
-                                <div class="d-flex flex-column dia-forecast border-left text-center">
-                                
-                                    <p class="dia-semana">Miércoles</p>
-                                
-                                    <i class="far fa-snowflake"></i>
-                                
-                                    <p>Nieve</p>
-                                
-                                    <p class="temperatura"> -3º</p>
-                                
-                                </div>
-                                <div class="d-flex flex-column dia-forecast border-left text-center">
+                                <div class="one-slide">
+                                    <div class="d-flex flex-column dia-forecast border-left text-center">
                                     
-                                        <p class="dia-semana">Jueves</p>
+                                        <p class="dia-semana">Miércoles</p>
                                     
                                         <i class="far fa-snowflake"></i>
                                     
@@ -85,39 +75,59 @@
                                     
                                         <p class="temperatura"> -3º</p>
                                     
+                                    </div>
                                 </div>
-                                <div class="d-flex flex-column dia-forecast border-left text-center">
-                                    
-                                    <p class="dia-semana">Viernes</p>
-                                
-                                    <i class="far fa-snowflake"></i>
-                                
-                                    <p>Nieve</p>
-                                
-                                    <p class="temperatura"> -3º</p>
-                                
+                                <div class="one-slide">
+                                    <div class="d-flex flex-column dia-forecast border-left text-center">
+                                        
+                                            <p class="dia-semana">Jueves</p>
+                                        
+                                            <i class="far fa-snowflake"></i>
+                                        
+                                            <p>Nieve</p>
+                                        
+                                            <p class="temperatura"> -3º</p>
+                                        
+                                    </div>
                                 </div>
-                                <div class="d-flex flex-column dia-forecast border-left text-center">
+                                <div class="one-slide">
+                                    <div class="d-flex flex-column dia-forecast border-left text-center">
+                                        
+                                        <p class="dia-semana">Viernes</p>
                                     
-                                    <p class="dia-semana">Sábado</p>
-                                
-                                    <i class="far fa-snowflake"></i>
-                                
-                                    <p>Nieve</p>
-                                
-                                    <p class="temperatura"> -3º</p>
-                                
+                                        <i class="far fa-snowflake"></i>
+                                    
+                                        <p>Nieve</p>
+                                    
+                                        <p class="temperatura"> -3º</p>
+                                    
+                                    </div>
                                 </div>
-                                <div class="d-flex flex-column dia-forecast border-left text-center">
+                                <div class="one-slide">
+                                    <div class="d-flex flex-column dia-forecast border-left text-center">
+                                        
+                                        <p class="dia-semana">Sábado</p>
                                     
-                                    <p class="dia-semana">Domingo</p>
-                                
-                                    <i class="far fa-snowflake"></i>
-                                
-                                    <p>Nieve</p>
-                                
-                                    <p class="temperatura"> -3º</p>
-                                
+                                        <i class="far fa-snowflake"></i>
+                                    
+                                        <p>Nieve</p>
+                                    
+                                        <p class="temperatura"> -3º</p>
+                                    
+                                    </div>
+                                </div>
+                                <div class="one-slide">
+                                    <div class="d-flex flex-column dia-forecast border-left text-center">
+                                        
+                                        <p class="dia-semana">Domingo</p>
+                                    
+                                        <i class="far fa-snowflake"></i>
+                                    
+                                        <p>Nieve</p>
+                                    
+                                        <p class="temperatura"> -3º</p>
+                                    
+                                    </div>
                                 </div>
                             </div>
                         </div>
