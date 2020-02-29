@@ -33,6 +33,7 @@
                     </div>
                     <div class="buscar">
                         <a href="{{ url('/') }}" class="lupa"></a>
+                        <a href="{{ url('/') }}" class="link-home">Buscar otra zona</a>
                     </div>
                 </div>
                 <div class="resultados-tiempo col-sm-12">
