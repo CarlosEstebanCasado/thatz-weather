@@ -16,7 +16,7 @@ class CreateTemperaturesTable extends Migration
         Schema::create('temperatures', function (Blueprint $table) {
             $table->increments('id');
             $table->string('city',50)->unique();
-            $table->smallInteger('cp')->length(4);
+            $table->string('cp',5);
             $table->unsignedSmallInteger('actual_temp');
             $table->unsignedSmallInteger('day_1_temp')->length(4);
             $table->unsignedSmallInteger('day_2_temp')->length(4);

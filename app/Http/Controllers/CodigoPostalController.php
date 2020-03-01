@@ -2,7 +2,9 @@
 
 namespace App\Http\Controllers;
 
+use App\TemperaturaTop5Model;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
 
 class CodigoPostalController extends Controller
 {
@@ -11,13 +13,16 @@ class CodigoPostalController extends Controller
         return view('index');
     }
 
-    /*public function mostrarCodigoPostal($cp){
-        //return "Codigo Postal : {$cp}";
-        return view('codigoPostal');
-    }*/
+    
+    public function mostrarCodigoPostal(Request $request){
 
-    //Para maquetar
-    public function mostrarCodigoPostal(){
-        return view('codigoPostal');
+        $codigoPostal = $request->input('codigoPostal');
+
+        dd($codigoPostal);
+
+        $temperaturas = TemperaturaTop5Model::all();
+        
+
+        return view('codigoPostal', compact('temperaturas'));
     }
 }

@@ -32,8 +32,8 @@
                         <p class="info-ciudad">Ciudad: <span>Barcelona</span></p>
                     </div>
                     <div class="buscar">
-                        <a href="{{ url('/') }}" class="lupa"></a>
-                        <a href="{{ url('/') }}" class="link-home">Buscar otra zona</a>
+                        <a href="{{ route('home') }}" class="lupa"></a>
+                        <a href="{{ route('home') }}" class="link-home">Buscar otra zona</a>
                     </div>
                 </div>
                 <div class="resultados-tiempo col-sm-12">
@@ -140,23 +140,42 @@
                     <p>Top 5 de las zonas más frías según tus búsquedas</p>
                 </div>
                 <div class="d-flex flex-column top5">
+                    @forelse ($temperaturas as $temperatura)
+                        <div class="d-flex flex-wrap my-2 border-bottom item-lista">
+                            <div class="numero-lista">
+                                <p>{{$loop->index + 1}}</p>
+                            </div>
+                            <div>
+                                <p class="temperatura">{{$temperatura->actual_temp}}º</p>
+                            </div>
+                            <div class="d-flex flex-column">
+                                <div>
+                                    <p class="info-cp">CP: <span>{{$temperatura->cp}}</span></p>
+                                </div>
+                                <div>
+                                    <p class="info-ciudad">Ciudad: <span>{{$temperatura->city}}</span></p>
+                                </div>
+                            </div>
+                        </div>
+                    @empty
                     <div class="d-flex flex-wrap my-2 border-bottom item-lista">
                         <div class="numero-lista">
-                            <p>1.</p>
+                            <p>{{$loop->index + 1}}</p>
                         </div>
                         <div>
-                            <p class="temperatura">-3º</p>
+                            <p class="temperatura"> No hay temperaturas para mostrar.</p>
                         </div>
                         <div class="d-flex flex-column">
                             <div >
-                                <p class="info-cp">CP: <span>08034</span></p>
+                                <p class="info-cp"></p>
                             </div>
                             <div>
-                                <p class="info-ciudad">Ciudad: <span>Barcelona</span></p>
+                                <p class="info-ciudad"></p>
                             </div>
                         </div>
                     </div>
-                    <div class="d-flex flex-wrap my-2 border-bottom item-lista">
+                    @endforelse
+                    <!--<div class="d-flex flex-wrap my-2 border-bottom item-lista">
                         <div class="numero-lista">
                             <p>2.</p>
                         </div>
@@ -219,7 +238,7 @@
                                 <p class="info-ciudad">Ciudad: <span>Barcelona</span></p>
                             </div>
                         </div>
-                    </div>
+                    </div>-->
                 </div>
             </div>
         </main>

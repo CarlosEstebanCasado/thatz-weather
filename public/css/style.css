@@ -364,7 +364,7 @@ form button .lupa {
     }
     /*Centrar lista top5*/
     .item-lista {
-        justify-content: space-evenly;
+        justify-content: space-start;
     }
 }
 

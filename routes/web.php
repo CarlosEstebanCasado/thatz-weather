@@ -13,10 +13,10 @@
 
 use App\Http\Controllers\CodigoPostalController;
 
-Route::get('/', 'CodigoPostalController@index');
+Route::get('/', 'CodigoPostalController@index')->name('home');
 
 /*Route::get('/codigo-postal/{cp}', 'CodigoPostalController@mostrarCodigoPostal')
     ->where('cp', '[0-9]{5}');*/ //Los codigos postales en españa tienen 5 cifras
 
-Route::get('/codigo-postal', 'CodigoPostalController@mostrarCodigoPostal');
+Route::get('/codigo-postal', 'CodigoPostalController@mostrarCodigoPostal')->name('codigoPostal');
     
