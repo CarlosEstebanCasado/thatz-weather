@@ -13,6 +13,8 @@ class TemperaturesSeeder extends Seeder
      */
     public function run()
     {
+        DB::table('temperatures')->truncate();
+
         DB::table('temperatures')->insert([
             'city' => 'Barcelona',
             'cp' => '08024',
@@ -24,6 +26,7 @@ class TemperaturesSeeder extends Seeder
             'day_5_temp' => 13
         ]);
 
+        //Comprobamos que realmente sólo puede haber un registro de cada ciudad
         DB::table('temperatures')->insert([
             'city' => 'Barcelona',
             'cp' => '08024',
