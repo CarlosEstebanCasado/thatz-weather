@@ -26,7 +26,7 @@
             <p>Entérate del tiempo en la zona exacta que te interesa buscando por código postal</p>
           </div>
           <div>
-            <form action="{{ url('/codigo-postal')}}" method="GET">
+            <form action="{{ route('resultado')}}" method="GET">
               <div class="form-group">
                 <input type="text" class="form-control" name="codigoPostal" id="codigoPostal" placeholder="Introduce el código postal" maxlength="5" pattern="[0-9]{5}" oninvalid="this.setCustomValidity('Debes introducir 5 dígitos.')">
               </div>

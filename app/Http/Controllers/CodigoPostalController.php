@@ -18,11 +18,11 @@ class CodigoPostalController extends Controller
 
         $codigoPostal = $request->input('codigoPostal');
 
-        dd($codigoPostal);
+        //dd($codigoPostal);
 
         $temperaturas = TemperaturaTop5Model::all();
         
 
-        return view('codigoPostal', compact('temperaturas'));
+        return view('resultado', compact('temperaturas'));
     }
 }
