@@ -64,21 +64,15 @@ class CodigoPostalController extends Controller
     //Función que sobreescribe los datos de las temperaturas de cada ciudad
     public function update($current, $forecast, $codigoPostal)
     {
-        $registro = TemperaturaTop5Model::find(1);
-
-        $registro->city = $current["weather_location_name"];
-
-        $registro->cp = $codigoPostal;
-
-        $registro->actual_temp = $current["weather_condition_temp"];
-
-        $registro->save();
+        TemperaturaTop5Model::where('city', $current["weather_location_name"])
+            ->update(['cp' => $codigoPostal, 'actual_temp' => $current["weather_condition_temp"]]);
     }
 
     //Función que muestera el top5 de temperaturas más bajas
-    public function showTop5(){
-        
-        $temperaturas = TemperaturaTop5Model::orderBy('actual_temp','ASC')->limit(5)->get();
+    public function showTop5()
+    {
+
+        $temperaturas = TemperaturaTop5Model::orderBy('actual_temp', 'ASC')->limit(5)->get();
 
         return $temperaturas;
     }
