@@ -18,11 +18,11 @@ class CreateTemperaturesTable extends Migration
             $table->string('city',50)->unique();
             $table->string('cp',5);
             $table->unsignedSmallInteger('actual_temp');
-            $table->unsignedSmallInteger('day_1_temp')->length(4);
-            $table->unsignedSmallInteger('day_2_temp')->length(4);
-            $table->unsignedSmallInteger('day_3_temp')->length(4);
-            $table->unsignedSmallInteger('day_4_temp')->length(4);
-            $table->unsignedSmallInteger('day_5_temp')->length(4);
+            $table->unsignedSmallInteger('day_1_temp')->length(4)->nullable();
+            $table->unsignedSmallInteger('day_2_temp')->length(4)->nullable();
+            $table->unsignedSmallInteger('day_3_temp')->length(4)->nullable();
+            $table->unsignedSmallInteger('day_4_temp')->length(4)->nullable();
+            $table->unsignedSmallInteger('day_5_temp')->length(4)->nullable();
             $table->timestamps();
         });
     }
