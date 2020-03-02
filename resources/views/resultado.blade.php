@@ -28,8 +28,8 @@
             <div class="col-sm-12 col-lg-8 resultado">
                 <div class="d-flex col-sm-12 my-4 busqueda-ciudad">
                     <div class="d-flex flex-column ciudad">
-                        <p class="info-cp">Código Postal: <span>08034</span></p>
-                        <p class="info-ciudad">Ciudad: <span>Barcelona</span></p>
+                        <p class="info-cp">Código Postal: <span>{{$codigoPostal}}</span></p>
+                        <p class="info-ciudad">Ciudad: <span>{{$current["weather_location_name"]}}</span></p>
                     </div>
                     <div class="buscar">
                         <a href="{{ route('home') }}" class="lupa"></a>
@@ -43,14 +43,14 @@
                         </div>
                         <div class="d-flex flex-wrap tiempo-actual">
                             <div class="col-6 tiempo">
-                                <i class="far fa-snowflake"></i>
+                                @include('tiempo.simbolos.current')
                             </div>
                             <div class="d-flex flex-column col-6">
                                 <div class="col-6 d-flex align-items-end">
-                                    <p class="fenomeno">Nieve</p>
+                                    <p class="fenomeno">{{$current["weather_condition_desc"]}}</p>
                                 </div>
                                 <div class="col-6">
-                                    <p class="temperatura">-3º</p>
+                                    <p class="temperatura">{{$current["weather_condition_temp"]}}º</p>
                                 </div>
                             </div>
                         </div>
@@ -65,10 +65,13 @@
                                 <div class="control next"><i class="fa fa-chevron-right text-white">&nbsp;</i></div>
                             </div>
                             <div class="carousel">
-                                <div class="one-slide">
+                                @include('tiempo.forecast')
+                                <!--<div class="one-slide">
                                     <div class="d-flex flex-column dia-forecast border-left text-center">
                                     
                                         <p class="dia-semana">Miércoles</p>
+
+                                        <p>11:30 AM</p>
                                     
                                         <i class="far fa-snowflake"></i>
                                     
@@ -129,7 +132,7 @@
                                         <p class="temperatura"> -3º</p>
                                     
                                     </div>
-                                </div>
+                                </div>-->
                             </div>
                         </div>
                     </div>
