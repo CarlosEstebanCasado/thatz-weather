@@ -9,7 +9,11 @@
         <i class="fas fa-cloud-showers-heavy"></i>
         @break
     @case("Clear")
-        <i class="fas fa-sun"></i>
+        @if($hoursDaysForecast[$i]["forecast_updated_time"] == "09:00 PM" || $hoursDaysForecast[$i]["forecast_updated_time"] == "12:00 AM" || $hoursDaysForecast[$i]["forecast_updated_time"] == "03:00 AM")
+            <i class="fas fa-moon"></i>
+        @else
+            <i class="fas fa-sun"></i>
+        @endif
         @break
     @case("Thunderstorm")
     <i class="fas fa-cloud-showers-heavy"></i>
