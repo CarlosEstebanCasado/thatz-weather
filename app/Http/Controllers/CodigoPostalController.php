@@ -77,7 +77,8 @@ class CodigoPostalController extends Controller
 
     //Función que muestera el top5 de temperaturas más bajas
     public function showTop5(){
-        $temperaturas = TemperaturaTop5Model::all();
+        
+        $temperaturas = TemperaturaTop5Model::orderBy('actual_temp','ASC')->limit(5)->get();
 
         return $temperaturas;
     }
