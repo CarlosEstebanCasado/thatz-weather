@@ -5,13 +5,13 @@
 @for($i=0; $i < count($hoursDaysForecast); $i++)
 <div class="one-slide">
     <div class="d-flex flex-column dia-forecast border-left text-center">
-    
-        <p class="dia-semana">{{$hoursDaysForecast[$i]["forecast_updated_day"]}}</p>
+        
+        @include('tiempo.fechas.dias')
 
-        <p>{{$hoursDaysForecast[$i]["forecast_updated_time"]}}</p>
+        @include('tiempo.fechas.horas')
     
         @include('tiempo.simbolos.forecast')
-    
+
         <p>{{$hoursDaysForecast[$i]["forecast_condition_desc"]}}</p>
     
         <p class="temperatura">{{$hoursDaysForecast[$i]["forecast_condition_temp"]}}º</p>
