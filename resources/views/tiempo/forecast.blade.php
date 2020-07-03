@@ -1,6 +1,6 @@
 
 @php
-    $hoursDaysForecast = $forecast["weather_forecast"]
+    $hoursDaysForecast = $forecast["weather_forecast"];
 @endphp
 @for($i=0; $i < count($hoursDaysForecast); $i++)
 <div class="one-slide">

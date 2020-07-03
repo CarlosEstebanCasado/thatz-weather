@@ -73,7 +73,7 @@
             </div>
             <div class="col-sm-12 col-lg-3 resultado">
                 <div class="texto-top5 my-4">
-                    <p>Top 5 de las zonas más frías según tus búsquedas</p>
+                    <p>Top 5 de las zonas más frías según las búsquedas</p>
                 </div>
                 <div class="d-flex flex-column top5">
                     @include('tiempo.top5')
